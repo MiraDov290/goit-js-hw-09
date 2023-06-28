@@ -27,12 +27,13 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-      console.log(selectedDates[0])
-          currentDifferenceDate(selectedDates[0]);
+    console.log(selectedDates[0]);
+    currentDifferenceDate(selectedDates[0]);
   },
 };
 
 btnStartRef.setAttribute('disabled', true);
+
 
 flatpickr(imputDatePickerRef, options);
 
